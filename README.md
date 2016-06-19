@@ -19,6 +19,12 @@ All error and exit codes
 * PHP
 * Python
  
+## API
+ * Facebook
+ * Github
+ * Twitter
+ * Google
+ 
 *and many more in progress... :)*
 
 ## Contribution 
