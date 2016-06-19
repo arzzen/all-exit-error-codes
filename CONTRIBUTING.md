@@ -1,14 +1,13 @@
 Contributing
 ============
 
-Want to contribute? Great! First, read this page (including the small print at
-the end).
+Want to contribute? Great! First, read this page.
 
 # Code reviews
 All submissions, including submissions by project members, require review. We
 use Github pull requests for this purpose.
 
-Some tips for good pull requests:
+# Some tips for good pull requests:
 * Use our code
   When in doubt, try to stay true to the existing code of the project.
 * Write a descriptive commit message. What problem are you solving and what
