@@ -19,7 +19,7 @@ All error and exit codes
 * PHP
 * Python
  
-## API
+## API directories
  * Facebook
  * Github
  * Twitter
