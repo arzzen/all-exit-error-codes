@@ -1,4 +1,4 @@
-All error and exit codes
+All error/exit codes
 ===========
 
 **Go to our [landing page][] to browse our documentation.**
