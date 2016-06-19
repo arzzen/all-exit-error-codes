@@ -28,6 +28,6 @@ All error and exit codes
 ## Licensing
 MIT see [LICENSE][] for the full license text.
 
-   [CONTRIBUTING]: http://github.com/arzzen/all-exit-error-codes/blob/master/CONTRIBUTING
+   [CONTRIBUTING]: http://github.com/arzzen/all-exit-error-codes/blob/master/CONTRIBUTING.md
    [landing page]: http://arzzen.github.io/all-exit-error-codes
    [LICENSE]: https://github.com/arzzen/all-exit-error-codes/blob/master/LICENSE.txt
