@@ -2,6 +2,7 @@ All error/exit codes
 ===========
 
 This repository contains the Markdown source of the all error/exit codes.
+
 Want to contribute? Great! First, [read this page][].
 
 ## Operating systems directories
