@@ -2,6 +2,7 @@ All error/exit codes
 ===========
 
 This repository contains the Markdown source of the all error/exit codes.
+Want to contribute? Great! First, [read this page][].
 
 ## Operating systems directories
 * Android
@@ -62,7 +63,7 @@ This documentation is written using standard [markdown syntax](https://help.gith
 ## Licensing
 MIT see [LICENSE][] for the full license text.
 
-   [CONTRIBUTING]: http://github.com/arzzen/all-exit-error-codes/blob/master/CONTRIBUTING.md
+   [read this page]: http://github.com/arzzen/all-exit-error-codes/blob/master/CONTRIBUTING.md
    [landing page]: http://arzzen.github.io/all-exit-error-codes
    [LICENSE]: https://github.com/arzzen/all-exit-error-codes/blob/master/LICENSE.txt
    [Facebook]: https://github.com/arzzen/all-exit-error-codes/blob/master/api/facebook/facebook.md
