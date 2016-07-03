@@ -1,7 +1,7 @@
 All error/exit codes
 ===========
 
-**Go to our [landing page][] to browse our documentation.**
+This repository contains the Markdown source of the all error/exit codes.
 
 ## Operating systems directories
 * Android
