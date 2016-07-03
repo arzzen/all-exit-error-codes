@@ -20,3 +20,6 @@ use Github pull requests for this purpose.
   HEAD. This make reviewing the code so much easier, and our history more
   readable.
 
+# Formatting
+
+This documentation is written using standard [markdown syntax](https://help.github.com/articles/markdown-basics/). Please submit your changes using the same syntax.
