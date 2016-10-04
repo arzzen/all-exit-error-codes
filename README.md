@@ -20,7 +20,8 @@ Want to contribute? Great! First, [read this page][].
 * [C][]
 * Go
 * Java
-* JavaScript
+* [JavaScript][]
+  * [NODEJS][]
 * [PHP][]
   * [PHP-XML][] 
 * [Python][]
@@ -79,3 +80,5 @@ MIT see [LICENSE][] for the full license text.
    [PHP]: https://github.com/arzzen/all-exit-error-codes/tree/master/programming-languages/php
    [PHP-XML]: https://github.com/arzzen/all-exit-error-codes/blob/master/programming-languages/php/xml.md
    [C]: https://github.com/arzzen/all-exit-error-codes/blob/master/programming-languages/c/errors.md
+   [JavaScript]: https://github.com/arzzen/all-exit-error-codes/blob/master/programming-languages/javascript
+   [NODEJS]: https://github.com/arzzen/all-exit-error-codes/blob/master/programming-languages/javascript/nodejs.md
