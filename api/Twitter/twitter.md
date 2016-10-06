@@ -7,18 +7,18 @@ The Twitter API attempts to return appropriate HTTP status codes for every reque
 
 | HTTP Error Code  | Text    | Description  |
 | :-------------: |:-------------| ------------|
-| 200 | OK | Node.js will normally exit with a 0 status code when no more async operations are pending.|
-| 304 | Uncaught Fatal Exception | There was an uncaught exception, and it was not handled by a domain or an 'uncaughtException' event handler.  |
-| 400 | N/A | Reserved by Bash for builtin misuse |
-| 401 | Internal JavaScript Parse Error | The JavaScript source code internal in Node.js's bootstrapping process caused a parse error. This is extremely rare, and generally can only happen during development of Node.js itself. |
-| 403 | Internal JavaScript Evaluation Failure | The JavaScript source code internal in Node.js's bootstrapping process failed to return a function value when evaluated. This is extremely rare, and generally can only happen during development of Node.js itself. |
-| 404 | Fatal Error | There was a fatal unrecoverable error in V8. Typically a message will be printed to stderr with the prefix FATAL ERROR. |
-| 406 | Non-function Internal Exception Handler | There was an uncaught exception, but the internal fatal exception handler function was somehow set to a non-function, and could not be called. |
-| 410 | Internal Exception Handler Run-Time Failure | There was an uncaught exception, and the internal fatal exception handler function itself threw an error while attempting to handle it. This can happen, for example, if a 'uncaughtException' or domain.on('error') handler throws an error. |
-| 420 | N/A | In previous versions of Node.js, exit code 8 sometimes indicated an uncaught exception. |
-| 422 | Invalid Argument | Either an unknown option was specified, or an option requiring a value was provided without a value. |
-| 429 | Internal JavaScript Run-Time Failure | The JavaScript source code internal in Node.js's bootstrapping process threw an error when the bootstrapping function was called. This is extremely rare, and generally can only happen during development of Node.js itself. |
-| 500 | Internal Server Error | The --debug, --inspect and/or --debug-brk options were set, but the port number chosen was invalid or unavailable. |
-| 502 | Bad Gateway	 | If Node.js receives a fatal signal such as SIGKILL or SIGHUP, then its exit code will be 128 plus the value of the signal code. This is a standard Unix practice, since exit codes are defined to be 7-bit integers, and signal exits set the high-order bit, and then contain the value of the signal code. |
-| 503 | Service Unavailable | If Node.js receives a fatal signal such as SIGKILL or SIGHUP, then its exit code will be 128 plus the value of the signal code. This is a standard Unix practice, since exit codes are defined to be 7-bit integers, and signal exits set the high-order bit, and then contain the value of the signal code. |
-| 504 | Gateway timeout | If Node.js receives a fatal signal such as SIGKILL or SIGHUP, then its exit code will be 128 plus the value of the signal code. This is a standard Unix practice, since exit codes are defined to be 7-bit integers, and signal exits set the high-order bit, and then contain the value of the signal code. |
+| 200 | OK | Succes.  **Not an error code** |
+| 304 | 304 | There was no new data to return.  **Not an error code** |
+| 400 | Bad Request | The request was invalid or cannot be otherwise served. An accompanying error message will explain further. In API v1.1, requests without authentication are considered invalid and will yield this response. |
+| 401 | Unauthorized | [Authentication credentials](https://dev.twitter.com/oauth) were missing or incorrect. Also returned in other circumstances, for example all calls to API v1 endpoints now return 401 (use [API v1.1](https://dev.twitter.com/rest/public) instead). |
+| 403 | Forbidden | The request is understood, but it has been refused or access is not allowed. An accompanying error message will explain why. This code is used when requests are being denied due to [update limits](https://support.twitter.com/articles/15364-about-twitter-limits-update-api-dm-and-following). Other reasons for this status being returned are listed alongside the response codes in the table below. |
+| 404 | Not Found | The URI requested is invalid or the resource requested, such as a user, does not exists. Also returned when the requested format is not supported by the requested method. |
+| 406 | Not Acceptable | Returned by the Search API when an invalid format is specified in the request. |
+| 410 | Gone | This resource is gone. Used to indicate that an API endpoint has been turned off. For example: “The Twitter REST API v1 will soon stop functioning. Please migrate to API v1.1.” |
+| 420 | Enhance Your Calm | Returned by the version 1 Search and Trends APIs when [you are being rate limited](https://dev.twitter.com/rest/public/rate-limiting). |
+| 422 | Unprocessable Entity | Returned when an image uploaded to [POST account / update_profile_banner](https://dev.twitter.com/rest/reference/post/account/update_profile_banner) is unable to be processed. |
+| 429 | Too Many Requests | Returned in API v1.1 when a request cannot be served due to the application’s rate limit having been exhausted for the resource. See [Rate Limiting in API v1.1](https://dev.twitter.com/rest/public/rate-limiting). |
+| 500 | Internal Server Error | Something is broken. Please post [to the developer forums](https://twittercommunity.com/) so the Twitter team can investigate. |
+| 502 | Bad Gateway	 | Twitter is down or being upgraded. **Not your fault**|
+| 503 | Service Unavailable | The Twitter servers are up, but overloaded with requests. Try again later. **Not your fault**|
+| 504 | Gateway timeout | The Twitter servers are up, but the request couldn’t be serviced due to some failure within our stack. Try again later. **Not your fault** |
