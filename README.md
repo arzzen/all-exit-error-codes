@@ -1,13 +1,16 @@
 All error/exit codes
 ===========
 
-This repository contains the Markdown source of the all error/exit codes.
+This repository provides a collection of error and exit codes for popular **_operating systems_**, **_programming languages_** and **_API_**'s. Each collection is documented in Markdown files with a reference to their original source.
 
 Want to contribute? Great! First, [read this page][].
 
 ## Operating systems directories
-* Android
-* Windows
+* [Android][]
+  * [camera][]
+  * [playservices][]
+  * [playstore][]
+  * [SIP][]
 * [MacOS][]
 * [Linux][]
   * [Sysexits][]
@@ -15,26 +18,23 @@ Want to contribute? Great! First, [read this page][].
   * [Bash][]
  
 ## Programming languages directories
-* C++
-* C#
 * [C][]
-* Go
-* Java
+* [Java][]
 * [JavaScript][]
-  * [NODEJS][]
+  * [Node.js][]
 * [PHP][]
-  * [PHP-XML][] 
+  * [PHP][PHP-Errors]
+  * [PHP-XML][]
 * [Python][]
  
 ## API directories
- * [Facebook][]
  * [Amazon][]
    * [S3][] 
- * Github
- * Twitter
- * Google
- 
-*and many more in progress... :)*
+ * [Facebook][]
+ * [Github][]
+ * [Twitter][] 
+
+*And many more in progress... :)*
 
 ## Contribution 
 
@@ -68,17 +68,29 @@ MIT see [LICENSE][] for the full license text.
    [read this page]: http://github.com/arzzen/all-exit-error-codes/blob/master/CONTRIBUTING.md
    [landing page]: http://arzzen.github.io/all-exit-error-codes
    [LICENSE]: https://github.com/arzzen/all-exit-error-codes/blob/master/LICENSE.txt
-   [Facebook]: https://github.com/arzzen/all-exit-error-codes/blob/master/api/facebook/facebook.md
-   [Amazon]: https://github.com/arzzen/all-exit-error-codes/blob/master/api/amazon/
-   [S3]: https://github.com/arzzen/all-exit-error-codes/blob/master/api/amazon/s3.md
+   
+   [Android]: https://github.com/arzzen/all-exit-error-codes/blob/master/operating-systems/android/list.md
+   [camera]: https://github.com/arzzen/all-exit-error-codes/blob/master/operating-systems/android/camera.md
+   [playservices]: https://github.com/arzzen/all-exit-error-codes/blob/master/operating-systems/android/playservices.md
+   [playstore]: https://github.com/arzzen/all-exit-error-codes/blob/master/operating-systems/android/playstore.md
+   [SIP]: https://github.com/arzzen/all-exit-error-codes/blob/master/operating-systems/android/SIP.md
    [MacOS]: https://github.com/arzzen/all-exit-error-codes/blob/master/operating-systems/mac-os/errors.md
-   [Linux]: https://github.com/arzzen/all-exit-error-codes/blob/master/operating-systems/linux/sysexits.md
+   [Linux]: https://github.com/arzzen/all-exit-error-codes/blob/master/operating-systems/linux/list.md
    [Sysexits]: https://github.com/arzzen/all-exit-error-codes/blob/master/operating-systems/linux/sysexits.md
    [Stdlib]: https://github.com/arzzen/all-exit-error-codes/blob/master/operating-systems/linux/stdlib.md
    [Bash]: https://github.com/arzzen/all-exit-error-codes/blob/master/operating-systems/linux/bash.md
-   [Python]: https://github.com/arzzen/all-exit-error-codes/blob/master/programming-languages/python/errno.md
-   [PHP]: https://github.com/arzzen/all-exit-error-codes/tree/master/programming-languages/php
-   [PHP-XML]: https://github.com/arzzen/all-exit-error-codes/blob/master/programming-languages/php/xml.md
+   
    [C]: https://github.com/arzzen/all-exit-error-codes/blob/master/programming-languages/c/errors.md
-   [JavaScript]: https://github.com/arzzen/all-exit-error-codes/blob/master/programming-languages/javascript
-   [NODEJS]: https://github.com/arzzen/all-exit-error-codes/blob/master/programming-languages/javascript/nodejs.md
+   [Java]: https://github.com/arzzen/all-exit-error-codes/blob/master/programming-languages/java/errors.md
+   [JavaScript]: https://github.com/arzzen/all-exit-error-codes/blob/master/programming-languages/javascript/list.md
+   [Node.js]: https://github.com/arzzen/all-exit-error-codes/blob/master/programming-languages/javascript/nodejs.md
+   [PHP]: https://github.com/arzzen/all-exit-error-codes/tree/master/programming-languages/php/list.md
+   [PHP-Errors]: https://github.com/arzzen/all-exit-error-codes/tree/master/programming-languages/php/errors.md
+   [PHP-XML]: https://github.com/arzzen/all-exit-error-codes/blob/master/programming-languages/php/xml.md
+   [Python]: https://github.com/arzzen/all-exit-error-codes/blob/master/programming-languages/python/errno.md
+   
+   [Amazon]: https://github.com/arzzen/all-exit-error-codes/blob/master/api/amazon/list.md
+   [S3]: https://github.com/arzzen/all-exit-error-codes/blob/master/api/amazon/s3.md
+   [Facebook]: https://github.com/arzzen/all-exit-error-codes/blob/master/api/facebook/facebook.md
+   [Github]: https://github.com/arzzen/all-exit-error-codes/blob/master/api/github/github.md
+   [Twitter]: https://github.com/arzzen/all-exit-error-codes/blob/master/api/Twitter/twitter.md
